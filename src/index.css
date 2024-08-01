@@ -1,0 +1,32 @@
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hover-underline {
+    text-decoration: underline 0.1em #ffffff;
+    transition: text-decoration-color 150ms;
+}
+
+.hover-underline:hover {
+    text-decoration-color: #000000;
+}
+
+.navigation-menu {
+    height: 0px;
+    transition: height 150ms;
+}
+
+.navigation-menu.expanded {
+    height: 10rem;
+}
